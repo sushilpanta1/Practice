@@ -1,0 +1,11 @@
+node(){
+    stage ('checkout'){
+    checkout scm
+}
+stage('build'){
+    sh "sh script.sh"
+}
+stage('Notify'){
+        sh "echo this script will run successfully"
+    }
+}
