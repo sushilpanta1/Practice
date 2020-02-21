@@ -1,5 +1,8 @@
 pipeline{
     agent any
+    environment{
+        project= "Test"
+    }
     stages{
         stage('Build'){
             steps{
