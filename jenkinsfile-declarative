@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage('Build'){
             steps{
-                sh "sh script.sh"
+                sh "sh script.sh" //this is to check if an agent is working
             }
         }
         stage('Notify'){
