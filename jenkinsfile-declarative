@@ -1,9 +1,13 @@
 pipeline{
     agent any
     stages{
-        stage('build')
+        stage('Build')
         steps{
             sh "sh script.sh"
     
+    }
+    stage('Notify')
+    steps{
+        sh "echo this file runs successfully"
     }
 }
