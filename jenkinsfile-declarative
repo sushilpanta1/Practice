@@ -18,9 +18,11 @@ pipeline{
     post{
         success{
             echo "success"
+            sh "message to business person"
         }
         failure{
             echo "failed"
+            sh "message to business person about failure"
         }
         always{
             deletedir()
