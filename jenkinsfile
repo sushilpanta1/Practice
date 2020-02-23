@@ -3,7 +3,7 @@ node(){
     checkout scm
 }
 stage('build'){
-    sh "sh script.sh"
+    sh "sh script.sh" //just checking
 }
 stage('Notify'){
         sh "echo this script will run successfully"
